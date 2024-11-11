@@ -10,7 +10,7 @@ public class Main {
 
         if (a<19 && b<19) System.out.println("0");
         else {
-            if(a1=='W' && b1=='W') System.out.println("0");
+            if(a1=="W" && b1=="W") System.out.println("0");
             else System.out.println("1");
         }
     }
