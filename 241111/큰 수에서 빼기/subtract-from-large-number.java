@@ -8,6 +8,6 @@ public class Main {
 
         if(a<b) {
             System.out.println(b-a);
-        }System.out.println(a-b);
+        } else{System.out.println(a-b);}
     }
 }
