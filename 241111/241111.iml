@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/2개 중 최대" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3 또는 5의 배수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4가지 관계연산자" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4번의 크기 비교" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/굉장한 숫자" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/두 번의 연산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/두 사람" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/두 숫자의 짝홀 여부" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/둘 중 하나의 배수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/등급 매기기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/물의 상태" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/범위 밖의 수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/범위 안의 수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/비교 연산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/비교에 따른 연산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/살 수 있는 물건" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/살 수 있는 물건 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/삼항연산자" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/삼항연산자 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/세 수의 중간값" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/세 정수의 최솟값" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/숫자의 계절은" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/숫자의 조건 여부" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/숫자의 조건 여부 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/숫자의 조건 여부 3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/시력 검사" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/시력 검사 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/시험 통과 여부 확인하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/알파벳에 따른 평가" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/음수 구별하기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/장학금" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/점수 비교" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/정사각형의 넓이" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/좀 더 어려운 수학 점수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/체질량지수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/최대 2번의 연산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/출석 부르기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/큰 수에서 빼기" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/특정 조건 두 정수 비교" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/특정 조건 세 정수 비교" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
