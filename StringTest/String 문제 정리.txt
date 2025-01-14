@@ -1,0 +1,110 @@
+1. 공백으로 구분 
+String[] s = str.split(" ");
+
+2. 단어 뒤집기
+ArrayList<String> answer = new ArrayList<>();
+new StringBuilder(str).reverse().toString()
+
+3. 문자인지 확인 ( 5번 문제 다시 풀기)
+Character.isAlphabetic()
+
+// 완벽하게 대칭인경우만 가능.. ㅠ
+int len = str.length();
+for (int i = 0; i< len / 2 ; i++) {
+	if (Character.isAlphabetic(str.charAt(i))) {
+		char temp = str.charAt(i);
+		str.charAt(i) = str.charAt(len - i);
+		str.charAt(len - i) = temp;
+	} 
+}
+
+4. String으로 바꾸기
+String.valueOf(charArray);
+
+5. str을 charArray로 바꾸기
+char[] charArray = s.toCharArray();
+
+6. 문자열 내 중복문자 제거
+if (s.indexOf(s.charAt(i)) == i) {
+    answer += s.charAt(i);
+}
+
+7. 대소문자 구분, 대소문자로 바꾸기
+isUpperCase, toUpperCase
+
+
+8. 완벽하게 대칭인 경우 뒤집기
+for (int i = 0; i< len /2; i++) {
+    if (str.charAt(i) != str.charAt(len -i -1)) {
+        return "NO";
+    }
+}
+
+
+9. 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열을 팰린드롬(특수문자 섞임)
+str.replaceAll("[^A-Z]", "")
+
+
+10. 숫자만 추출
+Character.isDigit
+Character.isAlphabetic
+
+
+11. 문자열s와 문자c가 떨어진 거리
+왼쪽부터 체크, 오른쪽 부터 체크
+String[] strArray = new String[str.length()];
+int n = 1000;
+
+for (int i =0; i< str.length(); i++) {
+    if (str.charAt(i) == c) {
+		n = 0;
+		strArray[i] = n;
+	} else {
+		n++;
+		strArray[i] = n;
+	}
+}
+n = 1000;
+
+for (int i = str.length()-1; i>=0; i--) {
+	if (str.charAt(i) != c) {
+		n++;
+		strArray[i] = Math.min(strArray[i], n);  // 최소값
+	} else {
+		n=0;
+	}
+}
+
+return strArray;
+
+
+12. 문자열 압축..
+
+for (int i = 0; i<str.length() -1; i++){
+	if (str.charAt(i) == str.charAt(i+1)) {
+		num++;
+	} else {
+		answer+=str.charAt(i)
+		if (num > 1) 
+		{
+			answer += String.valueOf(num)
+		}
+		num = 1;
+		
+		
+13. 암호 7자리씩 해석
+
+// 7자리씩 끊어서 처리
+for(int i = 0; i<n; i++) {
+	String newStr = temp.substring(i*7, (i + 1)*7); // 7자리를 추출
+	int decimal = Integer.parseInt(newStr, 2); // 와우 2진수를 10진수로 변환하는 매우 간단한 방법
+	answer += (char) decimal;  // 아스키 코드 값을 문자로 변환
+}
+
+// 7자리씩 끊어서 처리
+for (int i = 0; i< n; i++) {
+	String temp = str.substring(0, 7).replace('#', '1').replace('*', '0'); //0자리~ 7자리
+	int num = Integer.parseInt(temp, 2); // 2진수를 10진수로 변환
+	answer += (char)num;
+	str = str.substring(7); // 7자리~ 끝까지 자름
+}
