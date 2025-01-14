@@ -3,7 +3,7 @@ package StringTest;
 import java.io.IOException;
 import java.util.Scanner;
 
-//
+// 비추천
 public class Test20 {
     public char solution(String str) {
 		String answer="";

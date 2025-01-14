@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 // 가장 짧은 문자거리 : 왼쪽부터 비교, 오른쪽부터 비교
+// 숫자를 담아서 비교할 array 하나 생성
 public class Test16 {
     public int[] solution(String str, String str1) {
         char c = str1.charAt(0);

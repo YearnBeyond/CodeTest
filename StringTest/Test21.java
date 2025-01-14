@@ -3,7 +3,7 @@ package StringTest;
 import java.io.IOException;
 import java.util.Scanner;
 
-//
+// substring(i*7, (i + 1)*7) 로 7자리씩 추출
 public class Test21 {
     public String solution(int n, String str) {
 		String answer="";

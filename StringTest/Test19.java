@@ -3,7 +3,9 @@ package StringTest;
 import java.io.IOException;
 import java.util.Scanner;
 
-// 문자열 압축
+// 문자열 압축 KKHSSSSSSSE
+// 바로 옆에 문자랑 비교
+// 문자열 뒤에 공백 하나 추가하고 비교
 public class Test19 {
     public String solution(String str) {
 		String answer="";

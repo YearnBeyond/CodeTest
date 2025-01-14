@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 //replace와 parseInt를 사용해서..
+// replace를 통해 특정 문자 변경
+// parseInt를 통해 2진수를 10진수로 변경
 public class Test22 {
     public String solution(int n, String str) {
 		String answer="";
