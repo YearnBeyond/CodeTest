@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// 책 문제 : 구간합
 // 2차원 배열의 구간합
 public class Test2 {
     public static void main(String[] args) throws IOException{
