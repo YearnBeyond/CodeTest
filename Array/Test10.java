@@ -4,48 +4,56 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
+//********************************************************
+// 입력받은 숫자들 뒤집어서 소수만 뽑아내기
+//********************************************************
+// 숫자 뒤집기 !
+//********************************************************
 public class Test10 {
-    public ArrayList<Integer> solution(int n, String[] str) {
+    public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> result = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            // 숫자 뒤집기
-            int num = Integer.parseInt(new StringBuilder(str[i]).reverse().toString());
 
-            // 소수 판별
-            if (isPrime(num)) {
-                System.out.println(num+"은 소수입니다. 추가하겠습니다.");
-                result.add(num); // 소수일 경우 결과 리스트에 추가한다.
+        for (int i = 0; i< n; i++) {
+            int remainedNum = arr[i];
+            int reversedNum = 0;
+            while (remainedNum>0) {
+                int lastDigit = remainedNum % 10;
+                reversedNum = reversedNum * 10 + lastDigit;
+                remainedNum = remainedNum / 10;
+            }
+            // 소수인지 판별
+            if (isPrime(reversedNum)) {
+                result.add(reversedNum);
             }
         }
-
         return result;
     }
 
-    // 소수 판별 메서드
-    private boolean isPrime(int num) {
-        if (num < 2) return false; // 1은 소수가 아니다.
-        for (int i =2; i<= num; i++) {
-            if (num % i == 0) {
+    public boolean isPrime(int reversedNum) {
+        if (reversedNum < 2) return false; // 소수가 아니다.
+
+        for (int i=2; i<reversedNum; i++) {
+            if (reversedNum % i ==0) { // 소수가 아니다.
                 return false;
             }
         }
         return true;
     }
 
+
     public static void main(String[] args) throws IOException {
         Test10 T = new Test10();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        String[] str = new String[n];
+        int[] arr = new int[n];
 
         for (int i = 0; i < n; i++) {
-            str[i] = sc.next();
+            arr[i] = sc.nextInt();
         }
 
-        for (int x: T.solution(n, str)) {
+        for (int x: T.solution(n, arr)) {
             System.out.print(x+" ");
         }
     }
