@@ -21,7 +21,7 @@ public class Test14 {
             answer = Math.max(answer, sum1);
             answer = Math.max(answer, sum2);
         }
-        sum1=sum2=0;
+        sum1=sum2=0;               // 초기화를 밖에서 하는 걸 주의
         for (int i=0; i<n;i++){
             // 대각선의 합
             sum1 += arr[i][i];     // 왼쪽 꼭지점 시작 대각선
