@@ -17,7 +17,7 @@ public class Test15 {
                 boolean flag = true; // 초기 상태: 봉우리라고 가정
                 for (int k =0; k<4; k++){
                     int nx = i+ dx[k];  // 행
-                    int ny = j+ dx[k];  // 열
+                    int ny = j+ dy[k];  // 열
 //                    if (arr[nx][ny] >= arr[i][j] && nx>=0 nx<n && ny>=0 && ny <n)
                     if (nx>=0 && nx<n && ny>=0 && ny <n && arr[nx][ny] >= arr[i][j]) {
                         flag = false; // 봉우리가 아니다. // 3방향 모두 비교했더니 봉우리가 아니다.
