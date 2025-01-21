@@ -13,7 +13,7 @@ public class Test05 {
     public int solution(int num) {
         if (num < 2) return 0; // 소수가 존재하지 않음
 
-        boolean[] notPrime = new boolean[num + 1]; // false로 자동 초기화
+        boolean[] notPrime = new boolean[num + 1]; // + 1로 설정한 이유는 배열의 인덱스와 숫자를 일치시키기 위해,  false로 초기화(소수다)
         int cnt = 0;
 
         for (int i = 2; i<=num; i++) { // 모든 숫자를 전부 탐색하며 cnt++하므로 sqrt를 안씌운다.
