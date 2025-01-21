@@ -9,7 +9,7 @@ import java.util.Scanner;
 //********************************************************
 public class Test15 {
     int[] dx = {-1, 0, 1, 0};
-    int[] dy = {-1, 0, 1, 0};
+    int[] dy = {0, -1, 0, 1};
     public int solution(int n, int[][] arr) {
         int cnt = 0;
         for (int i = 0; i < n; i++) {
