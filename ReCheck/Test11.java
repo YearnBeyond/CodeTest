@@ -5,45 +5,40 @@ import java.util.Scanner;
 
 
 public class Test11 {
-    public int solution(int num, int[] arr) {
-		
-		int max = Integer.MIN_VALUE;
-		for (int x : arr) {
-			max = Math.max(x, max);
-		}
-		
-		boolean[] isNotPrime = new boolean[max + 1];
-		for (int i =2; i<=num; i++) {
-			if (!isNotPrime[i]) {
-				for (int j = i*i; j<=num; j++){
-					isNotPrime[j] = true;
-				}
-			}
-		}
-		
-		List<Integer> result = new ArrayList<>();
-		for (int x: arr) {
-			if (!isNotPrime[x]) {
-				result.add(x);
-			}
-		}
-		
+    public int[] solution(String str, char c) {
+		int[] answer = new int[str.length()];
+		int P = 1000;
 
-        return result;
+		for (int i=0; i<str.length(); i++) {
+			if (str.charAt(i) == c) {
+				P=0;
+				answer[i] = P;
+			} else {
+				P++;
+				answer[i] = P;
+			}
+		}
+		P = 1000;
+		for (int i = str.length() -1; i>=0; i--) {
+			if (str.charAt(i) == c) {
+				P=0;
+			} else {
+				P++;
+				answer[i] = Math.min(P, answer[i]);
+			}
+		}
+
+		return answer;
     }
 
     public static void main(String[] args) throws IOException {
         Test11 T = new Test11();
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-		int numArr[] = new int[num];
+        String str = sc.next();
+		char c = sc.next().charAt(0);
 
-        for (int i =0; i< num; i++) {
-            numArr[i] = sc.nextInt();
-        }
-
-        for (int x: T.solution(num, numArr)) {
-            System.out.print(x + " ");
-        }
+		for (int x : T.solution(str, c)) {
+			System.out.print(x+" ");
+		}
     }
 }

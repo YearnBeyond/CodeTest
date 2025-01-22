@@ -3,6 +3,7 @@ package ReCheck;
 import java.io.IOException;
 import java.util.Scanner;
 
+// 10. 가장 짧은 문자거리
 public class Test04 {
     public int[] solution(String str, char c) {
         int[] resultArr = new int[str.length()];
