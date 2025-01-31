@@ -19,7 +19,7 @@ public class Test05 {
         for (int i = 2; i<=num; i++) { // 모든 숫자를 전부 탐색하며 cnt++하므로 sqrt를 안씌운다.
             if (!notPrime[i]) {  // 기본값false에 !를 씌워 = true,
                 cnt++;
-                for (int j = i; j<=num; j=j+i) {
+                for (int j = i; j<=num; j=j+i) { // 시작점이 i이다.
                     notPrime[j] = true; // 소수가 아닌게 맞다.
                 }
             }
