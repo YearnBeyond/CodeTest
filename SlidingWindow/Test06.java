@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 //********************************************************
-//
+// 최대 길이 연속부분수열
+
 //********************************************************
 public class Test06 {
     public int solution(int n){
