@@ -13,8 +13,8 @@ public class Test17 {
     public int solution(int m,int n, int[][] arr) {
         int answer =0;
 
-        for (int i=1; i<=4; i++) { // 4가지 경우의 수
-            for (int j = 1; j <= 4; j++) { // 4가지 경우의 수
+        for (int i=1; i<=n; i++) { // 4가지 경우의 수
+            for (int j = 1; j <= n; j++) { // 4가지 경우의 수
                 int cnt = 0;
                 for (int k = 0; k < m; k++) { // 행
                     int Pi = 0; // 위치 초기화
