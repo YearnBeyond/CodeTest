@@ -1,14 +1,13 @@
 package ReCheck;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class Test17 {
     public List<Integer> solution(int n, int[] arr1, int m, int[] arr2) {
         List<Integer> answer = new ArrayList<>();
-        
+
 
         return answer;
     }

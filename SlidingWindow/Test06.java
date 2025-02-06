@@ -8,39 +8,37 @@ import java.util.Scanner;
 
 //********************************************************
 public class Test06 {
-    public int solution(int n, int m, int[] arr){
+    public int solution(int n, int k, int[] arr){
+        int answer = 0;
         int cnt = 0;
         int lt = 0;
 
-        for (int i =0; i<n; i++) {
-            int check = 0;
-            if (arr[i] == 0) {
-                arr[i] = 1;
-                lt = i;
-                check++;
+        for (int rt =0; rt<n; rt++){
+            if (arr[rt] == 0) {
+                cnt++; // 이 지점에서 rt가 0을 1로 바꾼다.
             }
-            if (arr[i] == 1)
-
-            while (check >= 2) {
-                arr[--lt] = 0;
-
+            while (cnt > k){
+                if (arr[lt] ==0) { //rt가 0->1로 바꿔놓은 것을 lt가 다시 1->0으로 변경
+                    cnt--;
+                    lt++;
+                }
             }
-
+            answer = Math.max(answer, rt -lt+1); // rt에서 lt까지 '1'인 경우의 길이
         }
 
-        return cnt;
+        return answer;
     }
     public static void main(String[] args) throws IOException {
         Test06 T = new Test06();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int m = sc.nextInt();
+        int k = sc.nextInt();
         int[] arr = new int[n];
         for (int i=0; i<n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(T.solution(n,m,arr));
+        System.out.println(T.solution(n,k,arr));
 
     }
 }
