@@ -2,31 +2,16 @@ package ReCheck;
 
 import java.util.Scanner;
 
-public class Test18 {
+public class Test19 {
     public int solution(int n, int m, int[] arr) {
         int sum = 0;
+
         int cnt = 0;
-        int lt = 0;
-
-        for (int rt=0; rt<n; rt++) {
-            sum += arr[rt];
-            if (sum == m) {
-                cnt++;
-            }
-            while(sum >= m) {
-                sum -= arr[lt];
-                lt++;
-
-                if (sum == m) {
-                    cnt++;
-                }
-            }
-        }
         return cnt;
     }
 
     public static void main(String[] args) {
-        Test18 T = new Test18();
+        Test19 T = new Test19();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
